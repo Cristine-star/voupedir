@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:voupedir/tela-login.dart';
 import 'usuario.dart';
+import 'tela-login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,33 +12,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Usuario u = Usuario(
+   /* Usuario u = Usuario(
       codigo:1,
       login: "Cristine123",
       nome: "Cristine",
       senha: "@senhaforte123"
-    );
+    );*/
 
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Meus dados"),
-        ),
-        body: Center(
-            child: Padding(padding: const EdgeInsets.all(18.0),
-              child: Column(
-                children: [
-                  Text("Nome:${u.nome}"),
-                  Text("Código:${u.codigo}"),
-                  Text("Login:${u.login}"),
-                  Text("Senha:${u.senha}")
-                ],
-              ),
-            )
-        ),
-
-      ),
-
+      debugShowCheckedModeBanner: false,
+      home:TelaLogin(),
     );
   }
 
