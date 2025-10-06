@@ -19,6 +19,7 @@ Widget build (BuildContext context){
               DropdownMenuItem(value: 'Italiana', child: Text ("Italiana")),
               DropdownMenuItem(value: 'Brasileira', child: Text ("Brasileira")),
           ], onChanged: (value){}),
+
          TextField(
            decoration: const InputDecoration(hintText: 'Nome do Restaurante'),
              validator: (String? value ){},
@@ -48,6 +49,6 @@ Widget build (BuildContext context){
       ),
 
 
-  )
+  );,
 }
 }
